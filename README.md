@@ -29,8 +29,8 @@ Kraftstoffverbrauch liefert. Zudem unterstützt es ihn bei seiner
 Fahrtkostenplanung. Dies soll zudem dazu führen, dass er Kraftstoff sparen und
 somit seine Kosten und seinen CO2-Ausstoß verringern kann.
 
-Programiersprache : Java.
-IDE : Android Studio.
-DB : SqLite.
+Programiersprache : Java.\
+IDE : Android Studio.\
+DB : SqLite.\
 Kurzer Überblick über das App und Lastenheft und code finden Sie im ordner SWE
 
