@@ -12,8 +12,9 @@ Innerhalb des Praktikums führen die Studierenden weitgehend selbstständig Soft
 Das Programm für Tankauswertung/Fahrverhalten wird im Rahmen der
 Lehrveranstaltung Software Engineering erstellt , Das Team besteht aus 6 Studenten 
 Meine Rolen waren Technolgie Manger/ Entwickler.
+Unser Projekt Garage war ein mobile-application für Tankauswertung/Fahrverhalten\
 
-Das Programm für Tankauswertung/Fahrverhalten ist eine Android App, die dem
+Die App für Tankauswertung/Fahrverhalten ist eine Android App, die dem
 User die Möglichkeit bietet unter mehreren angelegten Fahrzeugen, gefahrene
 Strecken und getätigte Tankvorgänge einzupflegen.
 Das Programm bietet dem User anhand der von ihm eingegebenen Daten, Einblick
