@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Garage</string>
+    <string name="garage">Garage</string>
+    <string name="add">ADD</string>
+    <string name="fahrzeug_bersicht">Fahrzeugübersicht</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="fahrzeug_bearbeiten">Fahrzeug bearbeiten</string>
+    <string name="tankstand">Tankstand %</string>
+    <string name="tankstandAfter">Tankstand %(Nach der Fahrt)</string>
+    <string name="anzeigename">Anzeigename</string>
+    <string name="update">Update</string>
+    <string name="arrowbutton">ArrowButton</string>
+    <string name="fahrzeug_hinzuf_gen">Fahrzeug hinzufügen</string>
+    <string name="herstellerangaben_zum_verbrauch_innerortes_l_kwh_100km">Herstellerangaben zum Verbrauch innerortes [l(kWh)/100km]</string>
+    <string name="_0_bis_15">[0 bis 15]</string>
+    <string name="herstellerangaben_zum_verbrauch_au_erortes_l_kwh_100km">Herstellerangaben zum Verbrauch außerortes [l(kWh)/100km]</string>
+    <string name="herstellerangaben_zum_verbrauch_kombiniert_l_kwh_100km">Herstellerangaben zum Verbrauch kombiniert [l(kWh)/100km]</string>
+    <string name="kilometerstand_km">Kilometerstand [km]</string>
+    <string name="kilometerstand_kmAfter">Kilometerstand [km](Nach der Fahrt)</string>
+    <string name="_0_bis_70000">[0 bis 70000]</string>
+    <string name="_0_bis_100">[0 bis 100]</string>
+    <string name="tankvolumen_l_kwh">Tankvolumen [l/(kWh)]</string>
+    <string name="_0_bis_60">[0 bis 60]</string>
+    <string name="herstellerangaben_zum_co2_aussto_kg_100km">Herstellerangaben zum CO2-Ausstoß[kg/100km]</string>
+    <string name="_0_bis_10">[0 bis 10]</string>
+    <string name="some_value_for_later">(some value for later)</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="circlecheck" />
+    <string name="fuelName">Getankte Menge[L / kWh]</string>
+    <string name="fuelPriceHeader">Gesamtkosten [€]</string>
+    <string name="fuelPriceHeaderText">Kosten</string>
+    <string name="tankvorgang">Tankvorgang bearbeiten</string>
+    <string name="ImagineButton">Bild des Tankbeleges aufnehmen</string>
+    <string name="ImagineButtonWS">Bild des Werkstattbelegs aufnehmen</string>
+    <string name="fahrzeug_anlegen">Fahrzeug anlegen</string>
+    <string name="Button">berechnen</string>
+    <string name="anmerkung">Anmerkung</string>
+    <string name="editWS">Werkstattbesuch einsehen</string>
+</resources>

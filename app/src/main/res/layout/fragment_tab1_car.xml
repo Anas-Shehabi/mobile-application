@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Tab1_Car">
+
+    <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/userVerbrauch"
+            android:layout_width="190dp"
+            android:layout_height="50dp"
+            android:layout_column="1"
+            android:background="@color/defaultColor"
+            android:text="@string/some_value_for_later"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/userKm"
+            android:layout_width="190dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:text="@string/some_value_for_later"
+           android:textStyle="bold"
+            android:layout_column="2"
+            android:background="@color/defaultColor"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_marginStart="10dp" />
+
+    </TableRow>
+
+    <TableRow android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/verbrauch"
+            android:layout_width="190dp"
+            android:layout_height="70dp"
+            android:layout_column="1"
+            android:gravity="center"
+            android:lines="2"
+            android:maxLines="2"
+            android:background="#f0f0f0"
+            android:text="Verbrauch
+                        [l(kWh)/100km]"
+            android:textColor="@color/black"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/kmStand"
+            android:layout_width="190dp"
+            android:layout_height="70dp"
+            android:lines="2"
+            android:maxLines="2"
+            android:layout_marginLeft="10dp"
+            android:text="Kilometerstand
+                            [km]"
+            android:background="#f0f0f0"
+            android:textColor="@color/black"
+            android:layout_column="2"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_marginStart="10dp" />
+    </TableRow>
+
+    <TableRow android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/userTankStand"
+            android:layout_width="190dp"
+            android:layout_height="50dp"
+            android:layout_column="1"
+            android:background="@color/defaultColor"
+            android:text="@string/some_value_for_later"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/userReichweiter"
+            android:layout_width="190dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:text="@string/some_value_for_later"
+            android:textStyle="bold"
+            android:layout_column="2"
+            android:background="@color/defaultColor"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_marginStart="10dp" />
+    </TableRow>
+
+    <TableRow android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/tankStand"
+            android:layout_width="190dp"
+            android:layout_height="70dp"
+            android:layout_column="1"
+            android:gravity="center"
+            android:lines="2"
+            android:maxLines="2"
+            android:background="#f0f0f0"
+            android:text="Tankstand
+                                 [%]"
+            android:textColor="@color/black"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/reichweiter"
+            android:layout_width="190dp"
+            android:layout_height="70dp"
+            android:lines="2"
+            android:maxLines="2"
+            android:layout_marginLeft="10dp"
+            android:text="Reichweite
+                            [km]"
+            android:background="#f0f0f0"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_marginStart="10dp" />
+    </TableRow>
+
+    <TableRow android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:gravity="left"
+        tools:ignore="RtlHardcoded">
+
+        <TextView
+            android:id="@+id/userCO2"
+            android:layout_width="190dp"
+            android:layout_height="50dp"
+            android:layout_column="1"
+            android:background="@color/defaultColor"
+            android:text="@string/some_value_for_later"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:gravity="center"/>
+    </TableRow>
+
+    <TableRow android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="left"
+        tools:ignore="RtlHardcoded">
+
+        <TextView
+            android:id="@+id/co2"
+            android:layout_width="190dp"
+            android:layout_height="70dp"
+            android:layout_column="1"
+            android:gravity="center"
+            android:lines="2"
+            android:maxLines="2"
+            android:text="CO2-Ausstoß
+                                 [g]"
+            android:background="#f0f0f0"
+            android:textColor="@color/black"
+            android:textAlignment="center" />
+    </TableRow>
+
+
+
+</TableLayout>

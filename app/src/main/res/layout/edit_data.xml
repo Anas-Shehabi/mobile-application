@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EditData">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/defaultColor"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme">
+
+            <ImageButton
+                android:id="@+id/img_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/defaultColor"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:layout_width="220dp"
+                android:layout_height="50dp"
+                android:text="@string/fahrzeug_bearbeiten"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
+                android:gravity="center_vertical"/>
+
+            <ImageButton
+                android:id="@+id/checkCircle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/defaultColor"
+                android:layout_marginStart="80dp"
+                android:layout_marginLeft="80dp"
+                />
+        </androidx.appcompat.widget.Toolbar>
+
+        <TextView
+            android:id="@+id/anzeigenamen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/anzeigename"
+            android:textSize="15sp"
+            android:textColor="#009688" />
+
+        <EditText
+            android:id="@+id/editName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:ems="10"
+            android:hint="@string/anzeigename"
+            android:inputType="textPersonName"
+            android:textSize="15sp"
+            android:layout_marginStart="20dp" />
+
+        <View
+            android:id="@+id/divider1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editName" />
+
+        <TextView
+            android:id="@+id/verbrauchInner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:textSize="15sp"
+            android:text="@string/herstellerangaben_zum_verbrauch_innerortes_l_kwh_100km"
+            android:textColor="#009688" />
+
+        <EditText
+            android:id="@+id/editInner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:ems="10"
+            android:hint="@string/_0_bis_15"
+            android:inputType="numberDecimal"
+            android:textSize="15sp"
+            android:layout_marginStart="20dp" />
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editInner" />
+
+        <TextView
+            android:id="@+id/verbrauchAusser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/herstellerangaben_zum_verbrauch_au_erortes_l_kwh_100km"
+            android:textColor="#009688"
+            android:textSize="15sp"
+            android:layout_marginStart="20dp" />
+
+        <EditText
+            android:id="@+id/editAusser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:ems="10"
+            android:hint="@string/_0_bis_15"
+            android:inputType="numberDecimal"
+            android:textSize="15sp"
+            android:layout_marginStart="20dp" />
+
+        <View
+            android:id="@+id/divider3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editAusser" />
+
+
+        <TextView
+            android:id="@+id/verbrauchKombiniert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/herstellerangaben_zum_verbrauch_kombiniert_l_kwh_100km"
+            android:textColor="#009688"
+            android:textSize="15sp"
+            android:layout_marginStart="20dp" />
+
+        <EditText
+            android:id="@+id/editKombi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:ems="10"
+            android:hint="@string/_0_bis_15"
+            android:inputType="numberDecimal"
+            android:textSize="15sp"
+            android:layout_marginStart="20dp" />
+
+        <View
+            android:id="@+id/divider4"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editKombi" />
+
+        <TextView
+            android:id="@+id/kilometerStand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/kilometerstand_km"
+            android:textColor="#009688"
+            android:textSize="15sp"
+            android:layout_marginStart="20dp" />
+
+        <EditText
+            android:id="@+id/editKm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:ems="10"
+            android:hint="@string/_0_bis_70000"
+            android:inputType="numberSigned"
+            android:textSize="15sp"
+            android:layout_marginStart="20dp" />
+
+        <View
+            android:id="@+id/divider5"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editKm" />
+
+        <TextView
+            android:id="@+id/tankStand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/tankstand"
+            android:textColor="#009688"
+            android:textSize="15sp"
+            android:layout_marginStart="20dp" />
+
+        <EditText
+            android:id="@+id/editTankStand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:ems="10"
+            android:hint="@string/_0_bis_100"
+            android:inputType="numberSigned"
+            android:textSize="15sp"
+            android:layout_marginStart="20dp" />
+
+        <View
+            android:id="@+id/divider6"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTankStand" />
+
+        <TextView
+            android:id="@+id/tankVolumen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/tankvolumen_l_kwh"
+            android:textColor="#009688"
+            android:textSize="15sp"
+            android:layout_marginStart="20dp" />
+
+        <EditText
+            android:id="@+id/editTankVolum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:ems="10"
+            android:hint="@string/_0_bis_60"
+            android:inputType="numberSigned"
+            android:textSize="15sp"
+            android:layout_marginStart="20dp" />
+
+        <View
+            android:id="@+id/divider7"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTankVolum" />
+
+        <TextView
+            android:id="@+id/co2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/herstellerangaben_zum_co2_aussto_kg_100km"
+            android:textColor="#009688"
+            android:textSize="15sp"
+            android:layout_marginStart="20dp" />
+
+        <EditText
+            android:id="@+id/editCO2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:ems="10"
+            android:hint="@string/_0_bis_10"
+            android:inputType="numberSigned"
+            android:textSize="15sp"
+            android:layout_marginStart="20dp" />
+
+
+        <!-- this toolbar is for having a small white space with keyboard -->
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+
+    </LinearLayout>
+
+
+</ScrollView>

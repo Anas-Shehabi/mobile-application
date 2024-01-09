@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_goneMarginTop="10px"
+    tools:context=".Tab5_Calculate">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="226dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32px"
+            android:layout_marginLeft="32px"
+            android:layout_marginTop="20px"
+            android:text="Streckenlänge[km]"
+            android:textColor="#009688"
+            />
+
+        <TextView
+            android:id="@+id/streckenleange_editText"
+            android:layout_width="383dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="32px"
+            android:layout_marginLeft="32px"
+            android:ems="10"
+            android:inputType="number"
+            android:textSize="14sp" />
+
+        <SeekBar
+            android:id="@+id/streckenleange_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="5000"
+            android:min="0"
+            android:progress="2500" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32px"
+            android:text="innerortes[%]"
+            android:textColor="#009688" />
+
+        <TextView
+            android:id="@+id/inn_editText"
+            android:layout_width="53dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="32px"
+            android:ems="10"
+            android:inputType="number"
+            android:textSize="14sp" />
+
+        <SeekBar
+            android:id="@+id/inn_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:max="100"
+            android:min="0"
+            android:progress="50" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32px"
+            android:text="kombiniert[%]"
+            android:textColor="#009688" />
+
+        <TextView
+            android:id="@+id/kom_editText"
+            android:layout_width="53dp"
+            android:layout_height="26dp"
+            android:layout_marginLeft="32px"
+            android:ems="10"
+            android:inputType="number"
+            android:textSize="14sp" />
+
+        <SeekBar
+            android:id="@+id/kom_seekabr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:min="0"
+            android:progress="50" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32px"
+            android:text="außerorts[%]"
+            android:textColor="#009688" />
+
+        <TextView
+            android:id="@+id/auss_editText"
+            android:layout_width="53dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="32px"
+            android:ems="10"
+            android:inputType="number"
+            android:textSize="14sp" />
+
+        <SeekBar
+            android:id="@+id/auss_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:max="100"
+            android:min="0"
+            android:progress="50" />
+
+        <Button
+            android:id="@+id/button_berchnen"
+            android:layout_width="383dp"
+            android:layout_height="34dp"
+            android:layout_marginLeft="32px"
+            android:layout_marginTop="20px"
+            android:background="@color/defaultColor"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="15dp"
+            android:text="@string/Button"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="match_parent"
+            android:layout_height="29dp"
+            android:layout_marginLeft="32px"
+            android:layout_marginTop="32px"
+            android:text="Kraftstoffverbrauch[l(kWH)]"
+            android:textColor="#009688" />
+
+        <TextView
+            android:id="@+id/kraftstoffeverbrauch_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32px"
+            android:text="0,0" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="match_parent"
+            android:layout_height="29dp"
+            android:layout_marginLeft="32px"
+
+            android:text="Kraftstoffkosten[€]"
+
+            android:textColor="#009688" />
+
+        <TextView
+            android:id="@+id/Kraftstoffkosten_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32px"
+            android:text="0,0" />
+
+        <View
+            android:id="@+id/divider8"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+
+        <TextView
+            android:id="@+id/textView34"
+            android:layout_width="match_parent"
+            android:layout_height="31dp"
+            android:layout_marginLeft="32px"
+            android:text="Anzahl der nötigen Tankvorgänge"
+            android:textColor="#009688" />
+
+        <TextView
+            android:id="@+id/Anzahl_der_Tankvorgeange_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32px"
+            android:text="0,0" />
+
+        <View
+            android:id="@+id/divider9"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+
+        <TextView
+            android:id="@+id/textView36"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="32px"
+            android:text="CO2-Ausstoß[kg]"
+            android:textColor="#009688" />
+
+        <TextView
+            android:id="@+id/Ausstoss_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="32px"
+            android:text="0,0"
+            />
+
+    </LinearLayout>
+</RelativeLayout>

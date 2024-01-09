@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddRoute">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/defaultColor"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme">
+
+            <ImageButton
+                android:id="@+id/back_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/defaultColor"
+                android:contentDescription="@string/arrowbutton" />
+
+
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
+                android:gravity="center_vertical"
+                android:text="Strecke eintragen"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                />
+
+            <ImageButton
+                android:id="@+id/checkCircle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/defaultColor"
+                android:layout_marginStart="100dp"
+                android:layout_marginLeft="100dp"
+                />
+
+        </androidx.appcompat.widget.Toolbar>
+
+
+        <TextView
+            android:id="@+id/kilometerStand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/kilometerstand_kmAfter"
+            android:textColor="#009688"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/editKm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:ems="10"
+            android:hint="@string/_0_bis_70000"
+            android:inputType="number"
+            android:textSize="15sp"/>
+
+        <SeekBar
+            android:id="@+id/seekBarKm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:min="0"
+            android:max="70000"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true" />
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editKm" />
+
+        <TextView
+            android:id="@+id/tankStand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/tankstandAfter"
+            android:textColor="#009688"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/editTankStand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:ems="10"
+            android:hint="@string/_0_bis_100"
+            android:inputType="numberSigned"
+            android:textSize="15sp"/>
+
+        <SeekBar
+            android:id="@+id/seekBarTank"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="100"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true" />
+
+
+        <View
+            android:id="@+id/divider3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTankStand" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="10dp">
+
+            <RadioButton
+                android:id="@+id/innerorts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Innerorts"
+                android:onClick="checkedButton" />
+
+            <RadioButton
+                android:id="@+id/ausserorts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Außerorts"
+                android:onClick="checkedButton"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/combiniert"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Combiniert"
+                android:onClick="checkedButton"/>
+
+        </RadioGroup>
+        <TextView
+            android:id="@+id/Travel_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#009688"
+            android:textSize="15sp"
+            android:text="Art der Fahrt" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="8dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTankStand" />
+
+        <RadioGroup
+            android:id="@+id/TravelGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:layout_marginTop="10dp">
+
+            <RadioButton
+                android:id="@+id/work"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Geschäftlich"
+                android:onClick="checkedButton" />
+
+            <RadioButton
+                android:id="@+id/privat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Privat"
+                android:onClick="checkedButton"
+                android:checked="true"/>
+
+
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+</RelativeLayout>

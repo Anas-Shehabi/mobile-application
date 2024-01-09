@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Tab4_Calender">
+
+    <Button
+        android:id="@+id/calender_button_later"
+        android:layout_width="139dp"
+        android:layout_height="44dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/defaultColor"
+        android:text="später"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/tabLayout2"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/calender_button_before"
+        android:layout_width="139dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@color/defaultColor"
+        android:text=" Früher"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/tabLayout2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout2"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:background="@color/defaultColor"
+        app:layout_constraintBottom_toTopOf="@+id/tabLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:tabTextColor="#FFFFFF">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/calender_week"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Woche" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/calender_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Monat" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/claender_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jahr" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="0dp"
+        android:layout_height="90dp"
+        android:background="@color/defaultColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/calender_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/ic_baseline_horizontal_distribute_24" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/calender_fuel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@drawable/ic_baseline_local_gas_station_24" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/calender_fuel_costs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@android:drawable/ic_lock_idle_charging" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/calender_co"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:icon="@android:drawable/stat_sys_warning" />
+    </com.google.android.material.tabs.TabLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

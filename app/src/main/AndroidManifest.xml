@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.swe.garage">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Garage"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".AddWorkshop"/>
+        <activity android:name=".EditWorkshop"/>
+        <activity android:name=".EditRefueling"/>
+        <activity android:name=".AddRefueling" />
+        <activity android:name=".AddRoute" />
+        <activity android:name=".EditData" />
+        <activity android:name=".Overview"/>
+        <activity android:name=".EditRoute" />
+        <activity android:name=".AddData" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
